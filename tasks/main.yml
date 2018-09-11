@@ -16,3 +16,6 @@
 
 - name: Configure monitor
   include: monitor-{{ spm_type }}.yml
+
+- name: Configure Java properties
+  include: java-properties.yml

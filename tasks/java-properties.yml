@@ -1,0 +1,9 @@
+---
+- name: Set Java properties
+  template:
+    src: java.properties.j2
+    dest: /opt/spm/properties/java.properties
+    owner: spmmon
+    group: root
+    mode: 0644
+  notify: restart spm-monitor

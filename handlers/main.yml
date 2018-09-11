@@ -1,0 +1,6 @@
+---
+- name: restart spm-monitor
+  service:
+    name: spm-monitor
+    state: restarted
+  become: true
